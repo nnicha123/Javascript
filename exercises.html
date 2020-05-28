@@ -52,6 +52,8 @@
         // console.log(subtract);
         // console.log(divide);
 
+
+
         //    var score = prompt("Enter your score");
         //    let grade;
         //    if(score >= 80){
@@ -244,7 +246,7 @@
         //         alert('We hope that this page looks ok!');
         // }
 
-        // 1
+
         // function draw(n) {
         //     let image = '';
         //     while (n > 0) {
@@ -254,7 +256,7 @@
         //     return image;
         // }
         // console.log(draw(3))
-        // 2
+
         // function draw(n) {
         //     let image = '';
         //     let newImage = '';
@@ -269,36 +271,19 @@
         // }
         // console.log(draw(3));
 
-        // 3
-        // function draw(n){
-        //     let num = '';
-        //     let newNum = '';
-        //     for(let i = 1;i<=n;i++){
-        //         num += i;
-        //     }
-        //     for(let i = 1;i<=n;i++){
-        //         newNum += (num + '\n')
-        //     }
-        //     return newNum;
-        // }
-        // console.log(draw(4));
-        // 4
-        // function draw(n){
-        //     let num,newNum = '';
-        //     let count;
-        //     for(let i = 1;i<=n;i++){
-        //         count = 0;
-        //         num = '';
-        //         while(count < n){
-        //             num += i;
-        //             count++;
-        //         }
-        //         newNum += (num + '\n');
-        //     }
-        //     return newNum;
-        // }
-        // console.log(draw(4))
-        // 5
+        function draw(n){
+            let num = '';
+            let newNum = '';
+            for(let i = 1;i<=n;i++){
+                num += i;
+            }
+            for(let i = 1;i<=n;i++){
+                newNum += (num + '\n')
+            }
+            return newNum;
+        }
+        console.log(draw(3));
+
         // function draw(n){
         //     let num,newNum = '';
         //     let count;
@@ -313,90 +298,7 @@
         //     }
         //     return newNum;
         // }
-        // console.log(draw(4))
-        // 6
-        // function draw(n) {
-        //     let num = '';
-        //     let newNum = '';
-        //     let count = 0;
-
-        //         for (let i = 1; i <= n ** 2; i++) {
-        //             num += i;
-        //             count++
-        //             if(count == n){
-        //                 newNum += (num + '\n');
-        //                 count = 0;
-        //                 num = '';
-        //             }
-        //         }
-        //     return newNum;
-        // }
-        // console.log(draw(3))
-
-        // 7
-        // function draw(n) {
-        //     let num = '';
-        //     let newNum = '';
-        //     let count = 0;
-
-        //     for (let i = n ** 2; i >0 ; i--) {
-        //         num += i;
-        //         count++
-        //         if (count == n) {
-        //             newNum += (num + '\n');
-        //             count = 0;
-        //             num = '';
-        //         }
-        //     }
-        //     return newNum;
-        // }
-        // console.log(draw(4))
-
-        //8
-        // function draw(n){
-        //     let num = 0;
-        //     let ans = '';
-        //     for(let i=0;i<n;i++){
-        //         ans += (num + '\n');
-        //         num += 2;
-        //     }
-        //     return ans;
-        // }
-        // console.log(draw(4));
-
-        //9
-        // function draw(n){
-        //     let num = 2;
-        //     let ans = '';
-        //     for(let i=0;i<n;i++){
-        //         ans += (num + '\n');
-        //         num += 2;
-        //     }
-        //     return ans;
-        // }
-        // console.log(draw(4));
-
-        //10
-        function draw(n) {
-            let num = 1;
-            let ans = '';
-            let newAns = '';
-            let newNewAns = '';
-            let answer = '';
-            let finalAnswer = '';
-            for (let i = 1; i <= n; i++) {
-                ans = i;
-                newAns = ans * 2;
-                newNewAns = ans * 3;
-                answer = ans + '' + newAns + '' + newNewAns;
-                finalAnswer += (answer + '\n');
-            }
-            return finalAnswer;
-            // newAns = ans*2;
-            // newNewAns = ans*3;
-        }
-        console.log(draw(3));
-
+        // console.log(draw(2))
 
         // function checkAge(age) {
         //     if (age >= 18) {
@@ -414,6 +316,23 @@
         //     alert('Access denied');
         // }
 
+        //10
+        function draw(n) {
+            let num = 1;
+            let ans = '';
+            let newAns = '';
+            let newNewAns = '';
+            let answer = '';
+            let finalAnswer = '';
+            for (let i = 1; i <= n; i++) {
+                ans = i;
+                newAns = ans * 2;
+                newNewAns = ans * 3;
+                answer = ans + '' + newAns + '' + newNewAns;
+                finalAnswer += (answer + '\n');
+            }
+            return finalAnswer;
+        }
 
 
     </script>
