@@ -393,12 +393,27 @@
         // console.log(draw(4));
 
         //11
+        // function draw(n) {
+        //     let image = '';
+        //     let newImage = '';
+        //     let count = 0;
+        //     for (let z = 0; z < n; z++) {
+        //         for (let i = 0; i < n; i++) {(i == count) ? image += "_" : image += '*'};
+        //         count++;
+        //         newImage += (image + '\n')
+        //         image = ''
+        //     }
+        //     return newImage;
+        // }
+        // console.log(draw(4));
+
+        //12
         function draw(n) {
             let image = '';
             let newImage = '';
             let count = 0;
-            for (let z = 0; z < n; z++) {
-                for (let i = 0; i < n; i++) {(i == count) ? image += "_" : image += '*'};
+            for (let z = n-1; z >= 0; z--) {
+                for (let i = n-1; i >= 0; i--) {(i == count) ? image += "_" : image += '*'};
                 count++;
                 newImage += (image + '\n')
                 image = ''
