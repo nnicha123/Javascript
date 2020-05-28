@@ -496,12 +496,36 @@
         // console.log(draw(4));
 
         //18 
+        // function draw(n) {
+        //     let image = '';
+        //     let newImage = '';
+        //     let count = 1;
+        //     for (let z = 1; z <= n; z++) {
+        //         for (let i = 1; i <= n; i++) { (i <= count-1) ? image += ("_") : image += ("*") };
+        //         count++;
+        //         newImage += (image + '\n');
+        //         image = '';
+        //     }
+        //     return newImage;
+        // }
+        // console.log(draw(4));
+
+        //19
         function draw(n) {
             let image = '';
             let newImage = '';
             let count = 1;
             for (let z = 1; z <= n; z++) {
-                for (let i = 1; i <= n; i++) { (i <= count-1) ? image += ("_") : image += ("*") };
+                if (count < n) {
+                    for (let i = n; i >= 1; i--) { (i <= count) ? image += ("*") : image += ("_") };
+                    count++;
+                    newImage += (image + '\n');
+                    image = '';
+                }
+            }
+            count = 1
+            for (let z = n; z >= 1; z--) {
+                for (let i = 1; i <= n; i++) { (i < count) ? image += ("_") : image += ("*") };
                 count++;
                 newImage += (image + '\n');
                 image = '';
@@ -509,7 +533,6 @@
             return newImage;
         }
         console.log(draw(4));
-
 
         // function checkAge(age) {
         //     if (age >= 18) {
