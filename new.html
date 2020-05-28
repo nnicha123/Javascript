@@ -378,23 +378,17 @@
 
         //10
         function draw(n) {
-            let num = 1;
-            let ans = '';
-            let newAns = '';
-            let newNewAns = '';
-            let answer = '';
             let finalAnswer = '';
             let tryloopAns = '';
             for (let i = 1; i <= n; i++) {
-                ans = i;
-                answer = ans + '' + (ans * 2) + '' + (ans * 3) + (ans*4);
-                finalAnswer += (answer + '\n');
-                console.log(answer);
-                // console.log(finalAnswer)
+                for (let j = 1; j <= n; j++) {
+                    newAns = i * j
+                    tryloopAns += (newAns);
+                }
+                finalAnswer += (tryloopAns + '\n');
+                tryloopAns = '';
             }
             return finalAnswer;
-            // newAns = ans*2;
-            // newNewAns = ans*3;
         }
         console.log(draw(4));
 
