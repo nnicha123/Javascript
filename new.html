@@ -377,20 +377,24 @@
         // console.log(draw(4));
 
         //10
-        function draw(n) {
-            let finalAnswer = '';
-            let tryloopAns = '';
-            for (let i = 1; i <= n; i++) {
-                for (let j = 1; j <= n; j++) {
-                    newAns = i * j
-                    tryloopAns += (newAns);
-                }
-                finalAnswer += (tryloopAns + '\n');
-                tryloopAns = '';
-            }
-            return finalAnswer;
-        }
-        console.log(draw(4));
+        // function draw(n) {
+        //     let finalAnswer = '';
+        //     let tryloopAns = '';
+        //     for (let i = 1; i <= n; i++) {
+        //         for (let j = 1; j <= n; j++) {
+        //             newAns = i * j
+        //             tryloopAns += (newAns);
+        //         }
+        //         finalAnswer += (tryloopAns + '\n');
+        //         tryloopAns = '';
+        //     }
+        //     return finalAnswer;
+        // }
+        // console.log(draw(4));
+
+        // Arrow function
+        let ask = (question, yes, no) =>  (confirm(question)) ? yes():no();
+        ask("Do you agree?",() => alert("You agreed.") ,() => alert("You canceled the execution."));
 
 
         // function checkAge(age) {
