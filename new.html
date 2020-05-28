@@ -398,18 +398,14 @@
             let newImage = '';
             let count = 0;
             for (let z = 0; z < n; z++) {
-                for (let i = 0; i < n; i++) {
-                    if (i == count) image += "^"
-                    image += '*';
-
-                }
+                for (let i = 0; i < n; i++) {(i == count) ? image += "_" : image += '*'};
                 count++;
                 newImage += (image + '\n')
                 image = ''
             }
             return newImage;
         }
-        console.log(draw(3));
+        console.log(draw(4));
 
         // Arrow function
         // let ask = (question, yes, no) =>  (confirm(question)) ? yes():no();
