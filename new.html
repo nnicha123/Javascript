@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
     <!-- <script src="basic.js"></script> -->
 </head>
+
 <body>
     <script>
         // Single line comment
@@ -33,24 +35,177 @@
         // console.log(`hello ${"name"}`);
         // console.log(`helo ${name}`);
 
-        let name = 'Nicha';
-        let age = 24;
-        let address = 'Ramintra';
-        let profile = `Name: ${name}, age: ${age}, address: ${address}`;
-        console.log(profile);
+        // let name = 'Nicha';
+        // let age = 24;
+        // let address = 'Ramintra';
+        // let profile = `Name: ${name}, age: ${age}, address: ${address}`;
+        // console.log(profile);
 
-        let value1 = "10";
-        let value2 = "2";
-        let add = value1 + value2;
-        let multiply = value1 * value2;
-        let subtract = value1 - value2;
-        let divide = value2 / value2;
-        console.log(add);
-        console.log(multiply);
-        console.log(subtract);
-        console.log(divide);
+        // let value1 = "10";
+        // let value2 = "2";
+        // let add = value1 + value2;
+        // let multiply = value1 * value2;
+        // let subtract = value1 - value2;
+        // let divide = value2 / value2;
+        // console.log(add);
+        // console.log(multiply);
+        // console.log(subtract);
+        // console.log(divide);
 
+
+
+        //    var score = prompt("Enter your score");
+        //    let grade;
+        //    if(score >= 80){
+        //        grade = 'A';
+        //    }else if(score >= 70){
+        //        grade = 'B';
+        //    }else if(score >= 60){
+        //        grade = 'C'
+        //    }else if(score >= 50){
+        //        grade = 'D'
+        //    }else{
+        //        grade = 'F'
+        //    }
+        //    let grade = (score >= 80) ? 'A' : ((score >= 70 && score <=79)) ? 'B' :  ((score >= 60 && score <=69)) ? 'C' : ((score >= 50 && score <=59)) ? 'D' : 'F';
+        //    alert(grade);
+
+        // let x = 1;
+        // (x > 0) && alert('Greater than zero!');
+        // (x < 0) && alert('Less than 0');
+
+        // let value = " "
+        //     ;
+        // result = !!value;
+        // console.log(result)
+
+        //     console.log(alert(null || 2 || undefined));
+        //     console.log(alert(alert(1) || 2 || alert(3))); //alert 1 ก่อน (แต่ return ค่า false) ก็เลยทำงานต่อ
+        //    (alert(1 && null && 2));
+        //     (alert(alert(1) && alert(2)));
+        // console.log(alert(null || 2 && 3 || 4));
+        // console.log(Boolean(2&&3))
+
+        // let age = prompt('Enter age:');
+        // let message;
+        // if(age >= 18 && age <= 60){
+        //     message = 'Age between 18-60';
+        // }else{
+        //     message = 'Age not in range 18-60';
+        // }
+        // alert(message)
+
+        // if(-1 || 0) alert('first');
+        // if (-1 && 0) alert( 'second' );
+        // if (null || -1 && 0) alert( 'third' );
+
+        // let user = prompt('Enter username');
+        // let password;
+        // if(user == "Admin"){
+        //     password = prompt('Please enter password');
+        //     if(password == 'codecamp#5'){
+        //         alert('ยินดีต้อนรับ');
+        //     }else if(password == ' ' || password == null){
+        //         alert('ยกเลิก');
+        //     }else{
+        //         alert('Wrong Password');
+        //     }
+        // }else if(user == null || user == " "){
+        //     alert('ยกเลิก');
+        // }else{
+        //     alert('ผมไม่รู้จักคุณ')
+        // }
+
+        // let user = prompt('Enter username');
+        // let password;
+        // if (user == "Admin") {
+        //     password = prompt('Please enter password');
+        //     if (password == 'codecamp#5') {
+        //         alert('ยินดีต้อนรับ');
+        //     } else if (!password) {
+        //         alert('ยกเลิก');
+        //     } else {
+        //         alert('Wrong Password');
+        //     }
+        // } else if (!user) {
+        //     alert('ยกเลิก');
+        // } else {
+        //     alert('ผมไม่รู้จักคุณ')
+        // }
+
+        // let user = prompt('Enter username');
+        // let password ;
+        // if (user == "Admin") {
+        //     password = prompt('Please enter password');
+        //     (password == 'codecamp#5') ? alert('ยินดีต้อนรับ') : !password ?  alert('ยกเลิก') : alert('Wrong Password');
+        // } else if (!user) {
+        //     alert('ยกเลิก');
+        // } else {
+        //     alert('ผมไม่รู้จักคุณ')
+        // }
+
+        // let sum = 0;
+        // while(true){
+        //     value = +prompt("ใส่ตัวเลข","");
+        //     if(!value)break;
+        //     sum+=value
+        // }
+        // alert(sum)
+
+        // let i = 3;
+
+        // while (i) {
+        //     alert(i--);
+        // }
+
+        // for(let i=1;i<=9;i++){
+        //     console.log(i);
+        //     if(i == 6){
+        //         break;
+        //     }
+        // }
+
+        // let i = 0;
+        // while (++i < 5) alert(i);
+        // let i = 0;
+        // while (i++ < 5) alert(i);
+
+
+        // for (let i = 0; i < 5; i++) alert( i );
+        // for (let i = 0; i < 5; ++i) alert( i );
+
+        // for(let i=2;i<=10;i++){
+        //     alert(i);
+        // }
+        // let i = 2;
+        // while(i <= 10){
+        //     alert(i);
+        //     i++;
+        // }
+
+        let num1= parseInt(prompt('Player 1: Enter number between 1-100'));
+        while(num1 < 1 || num1 > 100) {num1 = parseInt(prompt('Player 1: Number has to be between 1-100 => RE-ENTER'));}
+
+        let num2;
+        while(num1 !== num2){
+            num2 = parseInt(prompt('Player 2: Guess number'));
+            while(num2 < 1 || num2 > 100) {num2 = parseInt(prompt('Player 2: Guess has to be between 1-100 => RE-ENTER'));}
+            if(num1 === num2) break
+            (num1 > num2) ? alert('Too small') : alert('Too large');
+        }
+        alert('Correct!');
+
+
+        // let num1 = parseInt(prompt('Player 1: Enter number between 1-100',0));
+        // let num2 = parseInt(prompt('Enter num2',0));
+        // console.log(num1);
+        // console.log(num2);
+        // // console.log(parseInt(num1) > parseInt(num2));
+        // console.log(6 > 100);
+        // message = (num1 > num2) ? 'Too small' : 'Too large';
+        // console.log(message)
     </script>
 
 </body>
+
 </html>
