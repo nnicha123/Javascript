@@ -386,16 +386,16 @@
             let finalAnswer = '';
             for (let i = 1; i <= n; i++) {
                 ans = i;
-                newAns = ans * 2;
-                newNewAns = ans * 3;
-                answer = ans + '' + newAns + '' + newNewAns;
+                answer = ans + '' + (ans * 2) + '' + (ans * 3) + (ans*4);
                 finalAnswer += (answer + '\n');
+                console.log(answer);
+                // console.log(finalAnswer)
             }
             return finalAnswer;
             // newAns = ans*2;
             // newNewAns = ans*3;
         }
-        console.log(draw(3));
+        console.log(draw(4));
 
 
         // function checkAge(age) {
