@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // function pow(x,n){
+        //     let result=1;
+        //     for(let i=0;i<n;i++) {
+        //         result*=x;
+        //     }
+        //     return result;
+        // }
+        //     let x=prompt("x?",''), n=prompt("n?",'')
+        // if (n<=0){
+        //     alert(`Power ${n} is not supported, please enter an integer number greater than zero`);
+        // }
+        // else{
+        //     alert(pow(x,n))
+        // }
+        // Objects
+        // let user = {
+        //     name:'Nicha',
+        //     age:24
+        // }
+        // delete user.age;
+        // user['likes birds'] = true;
+        // user.height = '166cm';
+        // console.log(user);
+
+        // let newObj = new Object();
+        // let newObbj = {};
+        // console.log(newObj,newObbj);
+
+        // let human = {
+        //     name:'Nicha',
+        //     age:24,
+        //     house:'Panya P.1',
+        //     single:false,
+        //     score:5
+        // }
+        // human.height = '166cm';
+        // console.log(human);
+        let key = prompt("What is the key name?");
+        let value = prompt("Value you want to assign to this key");
+        let obj = {};
+        while (key !== 'stop') {
+            if (value === 'stop') break;
+            obj[key] = value;
+            key = prompt("What is the key name?");
+            value = prompt("Value you want to assign to this key");
+        }
+        console.log(obj);
+
+
+    </script>
+</body>
+
+</html>

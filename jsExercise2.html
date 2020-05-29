@@ -1,0 +1,16 @@
+<html>
+<script>
+    let key = prompt("Enter a fruit name?");
+    let value = parseInt(prompt("Number of fruits"));
+    let obj = {};
+    while (key !== 'stop') {
+        if (key === 'stop') break;
+        if(value > 1) key = key + 's';
+        obj[key] = value;
+        key = prompt("Enter a fruit name?");
+        value = parseInt(prompt("Number of fruits"));
+    } 
+    console.log(obj);
+</script>
+
+</html>
