@@ -1,0 +1,154 @@
+<html>
+<script>
+    // function makeUser(name, age) {
+    //     return {
+    //         name,
+    //         age,
+    //     };
+    // }
+    // let user = makeUser("John", 30);
+    // alert(user.name); // John
+    // alert(user.age);
+
+    // let user = { name: "John", age: 30 };
+    // alert("age" in user); // มี key ชื่อ age ใน object ชื่อ user
+    // alert("blabla" in user); // ไม่มี key ชื่อ blabla ใน object
+
+    // let user = {
+    //     name: "John",
+    //     age: 30,
+    //     isAdmin: true
+    // };
+
+    // for (key in user) {
+    //     console.log(key);
+    //     console.log(user[key]);
+    // }
+
+    // let codes = {
+    //     "+49": "Germany",
+    //     "+41": "Switzerland",
+    //     "+44": "Great Britain",
+    //     // ..,
+    //     "+1": "USA"
+    // };
+
+    // for (let code in codes) {
+    //     console.log(code); // 1, 41, 44, 49
+    // }
+
+    // let user = { name: 'John' };
+    // let admin = user;
+    // admin.name = 'Pete'; // เปลี่ยน properties name ใน admin
+    // console.log(admin.name);
+    // console.log(user.name); // 'Pete', properties name ใน user ก็จะถูกเปลี่ยนเช่นเดียวกัน
+
+    // let a = {};
+    // let b = {};
+    // console.log(a==b);
+
+    // let user = {
+    //     name:"John",
+    //     age:30
+    // };
+    // let clone = {};
+    // for(let key in user){
+    //     clone[key] = user[key];
+    // }
+    // clone.name = "Pete";
+    // clone.age = 24;
+    // console.log(clone);
+    // console.log(user);
+
+    // let user = { name: "John" };
+    // let permissions1 = { canView: true };
+    // let permissions2 = { canEdit: true };
+    // copies all properties from permissions1 and permissions2 into user
+    // Object.assign(user, permissions1, permissions2);
+    // console.log(user);
+    // console.log(permissions1);
+    // console.log(permissions2);
+
+    // let user = {name:"John"};
+    // // overwrite name, add isAdmin
+    // Object.assign(user,{name:"Pete",isAdmin:true});
+    // console.log(user)
+
+    // // Exercise
+    // const newObj = {};
+    // newObj.name = "Sonter";
+    // console.log(newObj)
+    // newObj.surname = "Pakorn";
+    // console.log(newObj)
+    // newObj.name = "Boy";
+    // console.log(newObj);
+    // delete newObj.name;
+    // console.log(newObj);
+
+    // let user = { name: "John" };
+    // let admin = { name: "Admin" };
+
+    // function sayHi() {
+    //     alert(this.name);
+    // }
+
+    // // ใส่ function sayHi ไปให้ทั้งสอง Object
+    // user.sayHi = sayHi;
+    // admin.sayHi = sayHi;
+
+    // // การเรียกฟังก์ชันทั้งสองครั้งนี้ this จะแตกต่างกัน
+    // user.sayHi(); // John  (this จะหมายถึง user)
+    // admin.sayHi(); // Admin  (this จะหมายถึง admin)
+
+    // admin['sayHi'](); // Admin (dot หรือ square brackets ก็ได้)
+
+    // let user = {
+    //     name: "John",
+    //     go: function () { console.log(this.name) }
+    // }
+
+    //     (user.go)()
+
+    // Calculator
+    // let calculator = {
+    //     read() {
+    //         this.val1 = Number(prompt("Enter first value"));
+    //         this.val2 = Number(prompt("Enter second value"));
+    //     },
+    //     sum() {
+    //         return this.val1 + this.val2;
+    //     },
+    //     mul() {
+    //         return this.val1 * this.val2;
+    //     }
+    // }
+    // calculator.read();
+    // alert(calculator.sum());
+    // alert(calculator.mul());
+    // console.log(calculator);
+
+    //Ladder
+    // let ladder = {
+    //     step: 0,
+    //     up() {
+    //         this.step++;
+    //         return this;
+    //     },
+    //     down() {
+    //         this.step--;
+    //         return this;
+    //     },
+    //     showStep: function () { // shows the current step
+    //         alert(this.step);
+    //         return this;
+    //     }
+    // };
+    // // ladder.up();
+    // // ladder.up();
+    // // ladder.down();
+    // // ladder.showStep();
+    // ladder.up().up().down().showStep();
+
+</script>
+
+</html>
