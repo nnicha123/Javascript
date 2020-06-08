@@ -8,19 +8,20 @@
 <body>
     <script>
         sumInput = () => {
+            let arr = []
             let sumArr = 0;
             let value = parseInt(prompt("Enter number"));
             while(Boolean(value)){
                 sumArr += value;
+                arr.push(value);
                 value = parseInt(prompt("Enter number"));
+                // console.log(arr)
             }
             return sumArr;
         }
 
         console.log(sumInput());
-
         // value = "1";
-        
         // console.log(typeof parseInt(value))
         // console.log(parseInt(value));
         // console.log(Boolean(parseInt(value)))

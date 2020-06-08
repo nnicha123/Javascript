@@ -47,21 +47,18 @@ console.log(checkSpam("ergethe"));
 
 // 3 truncate
 const truncate = (str,maxlength) => (str.length > maxlength) ?  str.slice(0,maxlength-1) + "..." : str;
-
 console.log(truncate("qwertyuiopasdfghjklzxcvbn",20));
 console.log(truncate("What I'd like to tell on this topic is:", 20));
 console.log(truncate("Hi everyone!", 20));
 
 // 4 extractCurrencyValue
 const extractCurrencyValue = (str,rate) => str.slice(1,str.length) * rate
-
 console.log(extractCurrencyValue('$1220',30.5));
 
 // Arrays
 let fruits = ["Apples", "Pear", "Orange"];
 let shoppingCart = fruits;
 shoppingCart.push("Banana");
-
 console.log( fruits.length ); // 4
 
 // Practice
@@ -75,7 +72,7 @@ styles.shift();
 console.log(styles);
 styles.unshift("Rap","Reggae");
 console.log(styles);
-// 3 Need to do in index.html (using prompt)
+// 3 Need to do in index.html (using prompt) -> do in index.html
 const sumInput = () => {
 
 }
