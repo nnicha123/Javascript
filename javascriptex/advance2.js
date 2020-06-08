@@ -36,14 +36,11 @@ console.log(guestList)
 
 // Exercise
 // 1
-const uCFirst = (string) => {
-    return string[0].toUpperCase() + string.slice(1);
-}
+const uCFirst = (string) =>  string[0].toUpperCase() + string.slice(1);
 console.log(uCFirst("dsdfzsrghello"));
+
 // 2
-const checkSpam = (string) => {
-    return string.includes("xxx") || string.includes("viagra");
-}
+const checkSpam = (string) => string.includes("xxx") || string.includes("viagra");
 console.log(checkSpam("awsviagrafre"));
 console.log(checkSpam("awsvixxxagrafre"));
 console.log(checkSpam("ergethe"));
