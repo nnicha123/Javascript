@@ -59,3 +59,26 @@ console.log(truncate("Hi everyone!", 20));
 const extractCurrencyValue = (str,rate) => str.slice(1,str.length) * rate
 
 console.log(extractCurrencyValue('$1220',30.5));
+
+// Arrays
+let fruits = ["Apples", "Pear", "Orange"];
+let shoppingCart = fruits;
+shoppingCart.push("Banana");
+
+console.log( fruits.length ); // 4
+
+// Practice
+// 1
+let styles = ["Jazz","Blues"];
+styles.push("Rock-n-Roll");
+console.log(styles);
+styles[1] = "Classics";
+console.log(styles);
+styles.shift();
+console.log(styles);
+styles.unshift("Rap","Reggae");
+console.log(styles);
+// 3 Need to do in index.html (using prompt)
+const sumInput = () => {
+
+}
