@@ -13,7 +13,7 @@
             let arr = []
             let sumArr = 0;
             let value = parseInt(prompt("Enter number"));
-            while (value || value == 0) {
+            while (isFinite(value)) {
                 sumArr += value;
                 arr.push(value);
                 value = parseInt(prompt("Enter number"));
