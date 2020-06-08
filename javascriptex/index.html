@@ -9,19 +9,35 @@
 
 <body>
     <script>
+        // sumInput = () => {
+        //     let arr = []
+        //     let sumArr = 0;
+        //     let value = parseInt(prompt("Enter number"));
+        //     while (isFinite(value)) {
+        //         sumArr += value;
+        //         arr.push(value);
+        //         value = parseInt(prompt("Enter number"));
+        //     }
+        //     return [sumArr, arr];
+        // }
+
+        // console.log(sumInput());
+
+        // Using forEach
         sumInput = () => {
-            let arr = []
-            let sumArr = 0;
+            let sum = 0;
+            let arr = [];
             let value = parseInt(prompt("Enter number"));
-            while (isFinite(value)) {
-                sumArr += value;
+            while(isFinite(value)){
                 arr.push(value);
                 value = parseInt(prompt("Enter number"));
             }
-            return [sumArr, arr];
+            console.log(arr);
+            arr.forEach(el => sum += el);
+            return sum;
         }
-
         console.log(sumInput());
+
     </script>
 </body>
 
