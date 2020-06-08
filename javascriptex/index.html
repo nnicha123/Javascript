@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript exercises</title>
+</head>
+<body>
+    <script>
+        sumInput = () => {
+            let sumArr = 0;
+            let value = parseInt(prompt("Enter number"));
+            while(Boolean(value)){
+                sumArr += value;
+                value = parseInt(prompt("Enter number"));
+            }
+            return sumArr;
+        }
+
+        console.log(sumInput());
+
+        // value = "1";
+        
+        // console.log(typeof parseInt(value))
+        // console.log(parseInt(value));
+        // console.log(Boolean(parseInt(value)))
+    </script>
+</body>
+</html>
