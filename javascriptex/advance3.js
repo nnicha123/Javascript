@@ -115,7 +115,7 @@ array2 = array1.map(el => {
   el.day = date.getDate();
   el.birth = months[date.getMonth()];
   el.year = date.getFullYear();
-  return `<tr> \n  <td>${el.name}</td> \n <td>${el.day} ${el.birth} ${el.year}</td> \n  </tr>`;
+  return `<tr>  <td>${el.name}</td> <td>${el.day} ${el.birth} ${el.year}</td>  </tr>`;
 })
 console.log(array2);
 
