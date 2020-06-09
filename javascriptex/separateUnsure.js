@@ -25,7 +25,7 @@ array2 = array1.map(el => {
     el.day = date.getDate();
     el.birth = months[date.getMonth()];
     el.year = date.getFullYear();
-    return `<tr> \n <td>${el.name}</td> \n <td>${el.day} ${el.birth} ${el.year}</td> \n </tr>`;
+    return `<tr> \n  <td>${el.name}</td> \n <td>${el.day} ${el.birth} ${el.year}</td> \n  </tr>`;
 })
 console.log(array2);
 // arr3 = array1.map(el => {
@@ -38,3 +38,4 @@ console.log(array2);
 // let date = new Date("2000-01-01");
 // let months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
 // console.log(months[date.getMonth()]);
+

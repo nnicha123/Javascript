@@ -26,16 +26,16 @@ let users = [
 let array1 = [1,2,30,400];
 let array2 = array1.map(el => el*2);
 console.log(array2);
-// practice 1.2 **
+
+// practice 1.2
 array1 = [1, 2, 3, 4];
+array2 = array1.map(el => el.toString());
+console.log(array2);
 // array2 = array1.map(el =>"\"" + el + "\"");
 // console.log(array2);
 
 // let arr2 = "\""+array1.join("\",\"")+"\"";
 // console.log(arr2);
-
-array2 = array1.map(el => el.toString());
-console.log(array2);
 
 // practice 1.3
 array1 = [1, "1", 2, {}];
@@ -103,11 +103,20 @@ console.log(array2);
 
 // practice 1.12 **
 array1 = [
-    { name: "apple", birth: "2000-01-01" },
-    { name: "banana", birth: "1990-10-10" },
-    { name: "watermelon", birth: "1985-12-30" },
-  ]
-array2 = array1.map(el => `<tr>\n <td> ${el.name} </td> \n <td> ${el.birth} </td> \n </tr>`)
+  { name: "apple", birth: "2000-01-01" },
+  { name: "banana", birth: "1990-10-10" },
+  { name: "watermelon", birth: "1985-12-30" },
+]
+let date;
+let months;
+array2 = array1.map(el => {
+  date = new Date(el.birth);
+  months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+  el.day = date.getDate();
+  el.birth = months[date.getMonth()];
+  el.year = date.getFullYear();
+  return `<tr> \n  <td>${el.name}</td> \n <td>${el.day} ${el.birth} ${el.year}</td> \n  </tr>`;
+})
 console.log(array2);
 
 
