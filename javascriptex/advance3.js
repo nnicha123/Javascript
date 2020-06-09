@@ -95,10 +95,10 @@ array1 = [
     { name: "banana", birth: "1990-10-01" },
     { name: "watermelon", birth: "1985-12-01" },
   ]
-let age;
-arr2 = array1.map(el => (2019 -  el.birth.slice(0,4)));
-array2 = array1;
-for(let i =0;i<array1.length;i++) array2[i].age = arr2[i];
+  array2 = array1.map(el => {
+    el.age = (el.birth.slice(5,7) >= "11") ?  (2019 -  el.birth.slice(0,4)) -1 : (2019 -  el.birth.slice(0,4));
+    return el;
+});
 console.log(array2);
 
 // practice 1.12 **
