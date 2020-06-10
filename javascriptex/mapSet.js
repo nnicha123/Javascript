@@ -146,9 +146,6 @@ let User = {
     age: 30
   };
 
-  count = (obj) => {
-      return Object.keys(obj).length
-  }
-  
-  console.log( count(User) ); // 2
+count = (obj) => Object.keys(obj).length;
+console.log( count(User) ); // 2
   
