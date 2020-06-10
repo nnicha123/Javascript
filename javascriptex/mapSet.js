@@ -94,6 +94,7 @@ set.forEach((value, valueAgain, set) => {
 unique = (arr) => new Set(arr);
 let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
 console.log(unique(values));
+
 // 2 *Not finished yet
 let a = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 // Write a function to first only return the originals;
