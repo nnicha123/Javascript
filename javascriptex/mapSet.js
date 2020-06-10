@@ -94,7 +94,7 @@ set.forEach((value, valueAgain, set) => {
 unique = (arr) => new Set(arr);
 let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
 console.log(unique(values));
-// 2 
+// 2 *Not finished yet
 let a = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 // Write a function to first only return the originals;
 uniqueValues = (arr) => {
@@ -109,6 +109,46 @@ uniqueValues = (arr) => {
     // should return 3 unique values
     return new Set(newArr);
 }
-
-
 console.log(uniqueValues(a));
+
+// 3 Need to convert keys to array first then push
+let mappy = new Map();
+mappy.set("name","John");
+let keys = mappy.keys();
+// convert keys to array
+keys = Array.from(keys);
+keys.push("more");
+console.log(keys);
+
+// 7.2
+// 1
+let salaries = {
+    "John": 100,
+    "Pete": 300,
+    "Mary": 250
+  };
+
+sumSalaries = (salaries) => {
+    let objKeys = Object.keys(salaries);
+    let objValues = Object.values(salaries);
+    let sum =0;
+    if(objKeys.length > 0){
+        objValues.map(el => sum += el);
+        return sum;
+    }
+    return 0;
+}
+console.log(sumSalaries(salaries));
+
+// 2
+let User = {
+    name: 'John',
+    age: 30
+  };
+
+  count = (obj) => {
+      return Object.keys(obj).length
+  }
+  
+  console.log( count(User) ); // 2
+  
