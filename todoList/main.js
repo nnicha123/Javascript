@@ -2,15 +2,8 @@ const container = document.querySelector('.container');
 var inputValue = document.querySelector('.input');
 const add = document.querySelector('.add');
 
-if(window.localStorage.getItem("todos") == undefined){
-     var todos = [];
-     window.localStorage.setItem("todos", JSON.stringify(todos));
-}
-
 var todosEX = window.localStorage.getItem("todos");
 var todos = JSON.parse(todosEX);
-
-
 class item{
 	constructor(name){
 		this.createItem(name);
@@ -29,24 +22,9 @@ class item{
     	remove.classList.add('remove');
     	remove.innerHTML = "Remove";
     	remove.addEventListener('click', () => this.remove(itemBox, name));
-
     	container.appendChild(itemBox);
-
         itemBox.appendChild(input);
         itemBox.appendChild(remove);
-
-    }
-
-    edit(input, name){
-        if(input.disabled == true){
-           input.disabled = !input.disabled;
-        }
-    	else{
-            input.disabled = !input.disabled;
-            let indexof = todos.indexOf(name);
-            todos[indexof] = input.value;
-            window.localStorage.setItem("todos", JSON.stringify(todos));
-        }
     }
 
     remove(itemBox, name){
@@ -65,7 +43,7 @@ window.addEventListener('keydown', (e) => {
 })
 
 function check(){
-	if(inputValue.value != ""){
+	if(inputValue.value){
 		new item(inputValue.value);
         todos.push(inputValue.value);
         window.localStorage.setItem("todos", JSON.stringify(todos));
@@ -73,10 +51,6 @@ function check(){
 	}
 }
 
-
 for (var v = 0 ; v < todos.length ; v++){
     new item(todos[v]);
 }
-
-
-new item("sport");
