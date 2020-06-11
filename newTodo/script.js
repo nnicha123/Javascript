@@ -1,12 +1,8 @@
-const addButton = document.querySelector(".addButton");
-let inputValue = document.querySelector(".input");
-let container = document.querySelector('.container');
-class item{
-    constructor(itemName){
-        // Item div
+class item {
+    constructor(itemName) {
         this.createDiv(itemName);
     }
-    createDiv(itemName){
+    createDiv(itemName) {
         let input = document.createElement('input');
         input.value = itemName;
         input.classList.add('item_input');
@@ -14,28 +10,26 @@ class item{
 
         let itemBox = document.createElement('div');
         itemBox.classList.add('item')
-        
+
         let removeButton = document.createElement('button');
         removeButton.innerHTML = '<i class="fas fa-trash-alt"></i>'
         removeButton.classList.add('removeButton');
 
-        container.appendChild(itemBox);
+        document.querySelector('.container').appendChild(itemBox);
         itemBox.appendChild(input);
         itemBox.appendChild(removeButton);
 
-
-        removeButton.addEventListener('click',() => this.remove(itemBox));
+        removeButton.addEventListener('click', () => this.remove(itemBox));
     }
-    remove(item){
-        container.removeChild(item);
+    remove(item) {
+        document.querySelector('.container').removeChild(item);
     }
 }
-let newy = new item('Try');
+new item('Example'); //Add example element
 
-addButton.addEventListener('click',() => {
-    if(inputValue.value){
-        newItem = new item(inputValue.value)
-        inputValue.value = "";
+document.querySelector(".addButton").addEventListener('click', () => {
+    if (document.querySelector(".input").value) {
+        newItem = new item(document.querySelector(".input").value)
+        document.querySelector(".input").value = "";
     }
-
 });
