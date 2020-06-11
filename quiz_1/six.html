@@ -1,0 +1,16 @@
+<script>
+    // Not yet done -> need to multiply before add 
+    let count = 0;
+    let mul = 0;
+    for (let i = 1; i <= 88; i++) {
+        if (count == 1) {
+            count = 0;
+            mul *= i;
+        } else {
+            count++;
+            mul += i;
+        }
+        console.log(i,mul);
+    }
+    // alert(sum);
+</script>
