@@ -302,26 +302,30 @@
         //20
         // function draw(n) {
         //     let newStr = '';
-        //     let count = 1;
+        //     let count = 0;
         //     let str;
         //     for (let i = n; i >= 1; i--) {
         //         for (let j = 1; j <= n; j++) {
-        //             console.log(j,i)
-        //             str = (j < i) ? '-' : count;
-        //             newStr = newStr + str;
-        //             if (typeof str === 'number') {
+        //             // console.log(j,i)
+        //             if (j < i) {
+        //                 str = '-';
+        //             } else {
         //                 count++;
+        //                 str = count;
         //             }
+        //             newStr = newStr + str;
         //         }
         //         newStr = newStr + '\n';
         //     }
         //     for (let i = 2; i <= n; i++) {
         //         for (let j = 1; j <= n; j++) {
-        //             str = (j < i) ? '-' : count;
-        //             newStr = newStr + str;
-        //             if (typeof str === 'number') {
+        //             if (j < i) {
+        //                 str = '-';
+        //             } else {
         //                 count++;
+        //                 str = count;
         //             }
+        //             newStr = newStr + str;
         //         }
         //         newStr = newStr + '\n';
         //     }
@@ -354,7 +358,7 @@
         // console.log(draw(2));
         // console.log(draw(3));
         // console.log(draw(4));
-        
+
         // 22
         // function draw(n) {
         //     let newStr = '';
@@ -417,61 +421,61 @@
         // console.log(draw(4));
 
         // 24
-        function draw(n) {
-            let newStr = '';
-            let count = 0;
-            let str;
-            for (let i = n; i >= 1; i--) {
-                for (let j = 1; j <= n; j++) {
-                    // console.log(j, i)
-                    if(j<i){
-                        str = '-';
-                    }else{
-                        count++;
-                        str = count;
-                    }
-                    newStr = newStr + str;
-                }
-                for (let j = (n - 1); j >= 1; j--) {
-                    // console.log(j, i)
-                    if(j<i){
-                        str = '-';
-                    }else{
-                        count++;
-                        str = count;
-                    }
-                    newStr = newStr + str;
-                }
-                newStr += '\n'
-            }
-            for (let i = 2; i <= n; i++) {
-                for (let j = 1; j <= n; j++) {
-                    // console.log(j, i)
-                    if(j<i){
-                        str = '-';
-                    }else{
-                        count++;
-                        str = count;
-                    }
-                    newStr = newStr + str;
-                }
-                for (let j = (n - 1); j >= 1; j--) {
-                    // console.log(j, i)
-                    if(j<i){
-                        str = '-';
-                    }else{
-                        count++;
-                        str = count;
-                    }
-                    newStr = newStr + str;
-                }
-                newStr += '\n'
-            }
-            return newStr;
-        }
-        console.log(draw(2));
-        console.log(draw(3));
-        console.log(draw(4));
+        // function draw(n) {
+        //     let newStr = '';
+        //     let count = 0;
+        //     let str;
+        //     for (let i = n; i >= 1; i--) {
+        //         for (let j = 1; j <= n; j++) {
+        //             // console.log(j, i)
+        //             if(j<i){
+        //                 str = '-';
+        //             }else{
+        //                 count++;
+        //                 str = count;
+        //             }
+        //             newStr = newStr + str;
+        //         }
+        //         for (let j = (n - 1); j >= 1; j--) {
+        //             // console.log(j, i)
+        //             if(j<i){
+        //                 str = '-';
+        //             }else{
+        //                 count++;
+        //                 str = count;
+        //             }
+        //             newStr = newStr + str;
+        //         }
+        //         newStr += '\n'
+        //     }
+        //     for (let i = 2; i <= n; i++) {
+        //         for (let j = 1; j <= n; j++) {
+        //             // console.log(j, i)
+        //             if(j<i){
+        //                 str = '-';
+        //             }else{
+        //                 count++;
+        //                 str = count;
+        //             }
+        //             newStr = newStr + str;
+        //         }
+        //         for (let j = (n - 1); j >= 1; j--) {
+        //             // console.log(j, i)
+        //             if(j<i){
+        //                 str = '-';
+        //             }else{
+        //                 count++;
+        //                 str = count;
+        //             }
+        //             newStr = newStr + str;
+        //         }
+        //         newStr += '\n'
+        //     }
+        //     return newStr;
+        // }
+        // console.log(draw(2));
+        // console.log(draw(3));
+        // console.log(draw(4));
 
     </script>
 
