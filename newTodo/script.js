@@ -31,6 +31,7 @@ class item{
     }
 }
 let newy = new item('Try');
+
 addButton.addEventListener('click',() => {
     if(inputValue.value){
         newItem = new item(inputValue.value)
