@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 15</title>
+</head>
+<body>
+    <script>
+        let reversedNum = [];
+        let neg = false;
+        let val = Number(prompt('Enter numbered value'));
+        if(val < 0) {neg = true;  val = Math.abs(val);}
+        let numArray = String(val).split('');
+        while(numArray.length) reversedNum.push(numArray.pop());
+        if(neg) alert(0-Number(reversedNum.join('')));
+        else alert(Number(reversedNum.join('')));
+    </script>
+</body>
+</html>
