@@ -12,28 +12,26 @@
         let arr = [];
         let minVal;
         let val = prompt('Enter value');
-        while (val !== "stop") {
+        while (val !== "stop" && val ) {
             arr.push(val);
             val = prompt('Enter value');
         }
+        console.log(arr);
         let threeMin = [];
         let minIndex;
-        while (threeMin.length < 3) {
+        while (threeMin.length < 3){
             minVal = arr[0]
-
-            for (let i = 0; i < arr.length; i++)
-                if (arr[i] < minVal) {
-                    minVal = arr[i]
+            // find min value
+            for(let i = 0;i<arr.length;i++){
+                if(minVal > arr[i]){
+                    minVal = arr[i];
                     minIndex = i;
-                    threeMin.push(minVal);
                 }
-                arr.splice(minIndex, 1);
-
-
-
+            }
+            threeMin.push(arr[minIndex]);
+            arr.splice(minIndex,1);
         }
-        console.log(arr,threeMin);
-
+        console.log(threeMin);
     </script>
 </body>
 
