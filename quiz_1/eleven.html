@@ -16,14 +16,13 @@
             arr.push(val);
             val = prompt('Enter value');
         }
-        console.log(arr);
         let threeMin = [];
         let minIndex;
         while (threeMin.length < 3){
-            minVal = arr[0]
+            minVal = Number(arr[0])
             // find min value
             for(let i = 0;i<arr.length;i++){
-                if(minVal > arr[i]){
+                if(Number(minVal) > Number(arr[i])){
                     minVal = arr[i];
                     minIndex = i;
                 }

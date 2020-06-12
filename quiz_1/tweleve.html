@@ -9,14 +9,19 @@
     <script>
         let arr = [];
         let minVal;
+        let maxVal;
         let val = prompt('Enter value');
         while(val !== "stop"){
             arr.push(val);
             val = prompt('Enter value');
         }
-        minVal = Number(arr[0]);
-        for(let i=0;i<arr.length;i++) if(Number(arr[i]) < Number(minVal)) minVal = arr[i];
-        alert(minVal);
+        console.log(arr);
+        minVal = arr[0];
+        maxVal = arr[0]
+        for(let i=0;i<arr.length;i++) if(Number(arr[i]) < Number(minVal)) minVal = arr[i]
+        console.log(minVal)
+        for(let i=0;i<arr.length;i++) if(Number(arr[i]) > Number(maxVal)) maxVal = arr[i];
+        console.log(minVal,maxVal);
 
     </script>
 </body>
