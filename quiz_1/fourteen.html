@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 10</title>
+</head>
+<body>
+    <script>
+        let arr = []; //to keep record of values
+        let sum =0;
+        let val = prompt('Enter value');
+        while(val !== "stop"){
+            arr.push(val);
+            sum += Number(val);
+            val = prompt('Enter value');
+        }
+        console.log(sum/arr.length);
+
+    </script>
+</body>
+</html>
