@@ -1,13 +1,8 @@
-// NOT DONE YET
 numberOfSquare = (height,width) => {
     let highestSquare = 1;
     let area = height*width
-    for(let i=1;i<=area;i++){
-        if(area % (i*i) == 0){
-            highestSquare = i*i;
-        }
-    }
-    return highestSquare;
+    for(let i=1;i<=area;i++) if(area % (i*i) == 0 && (height % i == 0) && (width % i == 0)) highestSquare = i*i;
+    return area/highestSquare;
 }
 console.log(numberOfSquare(15,15));
 console.log(numberOfSquare(20,15));
