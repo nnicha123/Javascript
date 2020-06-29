@@ -1,12 +1,7 @@
-findPrimeSum = (n) => {
-    let val = 1;
+findSum = (n) => {
     let sum = 0;
-    while (val < n) {
-        val = val + 1;
-        for (var i = 2; i <= val; i++) if (val % i == 0) break;
-        if (i == val) sum += val;
-    }
+    let newArr = String(n).split('')
+    while (newArr.length) sum += Number(newArr.pop())
     return sum;
 }
-console.log(findPrimeSum(4129980)); //too slow
-// console.log(findPrimeSum(11));
+console.log(findSum(4129980)); //33
